@@ -4,6 +4,182 @@
 <body>
     <head>
         <title> HTML and CSS Group 4</title>
+        <style type="text/css">
+            /* The style for the body tag sets up the whole page to have a specific background image, a background color (which shows up if the image isn't found), the type of font to use for the text, text color (and yes it bothers me that this isn't font-color), and font weight. */
+            body {
+                background: rgb(10, 7, 14);
+                background-image: url("data:image/jpeg;base64,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");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                font-family: Helvetica, Arial, Helvetica, sans-serif;
+                color: #188111;
+                font-weight: 500;
+            }
+            /* This is the first case where I've declared a "class" attribute named "boxes" to use a particular kind of style treatment, and in the main text, I've specific certain div tags to have this class value. It basically is used to create the rounded-corner gray boxes around the text and also set the width of the boxes and make them center aligned. The overflow property is there to make sure images and other elements that float in the boxes don't bleed off the bottoms... You can see what I mean if you delete it and then scroll down to the images section... */
+            .boxes {
+                background-color: rgb(236, 236, 236);
+                padding: 20px;
+                margin: 20px;
+                border: 3px solid black;
+                border-radius: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                max-width: 900px;
+                overflow: auto;
+                box-shadow: 5px 5px 5px;
+            }
+            /* Setting up the headings to use a different font and style and make them right adjusted... */
+            h1, h2, h3 {
+                color: black;
+                font-family: Georgia, serif;
+                font-weight: 900;
+                font-style: italic;
+                text-align: right;
+                font-weight: bold;
+            }
+            /* Let's make text in anchor tags pop out a bit... */
+            a {
+                font-weight: bold;
+            }
+            /* I want the color of the text in an anchor tag to change if you move the mouse over it: */
+            a:hover {
+                color: red;
+            }
+            /* The text in an anchor tag is only set to uppercase if it's within a paragraph tag. I'm doing this by using a "combinator", namely the "descendant" selector. If you scroll up to the top of the page, you can see the quick-n-dirty menu I created up top that doesn't use a paragraph tag... Note that this changes every anchor within a paragraph. If I only wanted to change anchors that were directly nested in a paragraph but not any anchors that are further nested, like say with a span tag, then I'd use the "child >" selector. */
+            p a {
+                text-transform: uppercase;
+            }
+            /* In creating this page and referring to online references, I discovered you can set the first element after another to be different than the rest of the same elements! This is done with another combinator selector. I'm using an "adjacent sibling +" selector here. There's also "general sibling ~", which would select all the paragraph tags that are on the same level as the div tag. These are pretty crazy if you think about it, changing the look of stuff outside of itself seems like it could be prone to abuse or errors... */
+            h1+p, h2+p, h3+p {
+                font-weight: 600;
+            }
+            /* Changing up the first line in a paragraph using a "pseudo-element ::". This is similar to how I changed the hover and activate states for anchor tags (and the button example way down at the bottom) except for those I used a "pseudo-class :". For more info on pseudo-class and pseudo-element, check out w3schools awesome reference! https://www.w3schools.com/css/css_pseudo_classes.asp */
+            p::first-line {
+                color: purple;
+            }
+            /* There's also ways of marking specific elements by setting their "id" attribute instead of setting their "class" attribute... Use this when you want to affect one single unique element. If there's a bunch of elements that you want treated the same, you should give them all the same class instead. This will be more important when we start to get into coding behavior with Javascript... */
+            #yay {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1.2em;
+                color: green;
+                font-weight: bold;
+            }
+            /* I won't put in comments for a lot of the rest... Just check them out and how they affect specific sorts of tags. */
+            ol {
+                list-style-type: lower-roman;
+            }
+            strong {
+                font-weight: 900;
+            }
+            em {
+                font-style: oblique;
+                font-weight: 600;
+            }
+            /* Tables are a pain in the ass... */
+            table {
+                width: 75%;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th {
+                text-transform: uppercase;
+                font-size: 90%;
+                text-align: center;
+                border-bottom: 2px solid black;
+                border-top: 1px solid gray;
+                width: 50%;
+            }
+            /* Found this tidbit! You can specify every odd or even row to be a different color than the others! */
+            tr:nth-child(even) {
+                background-color: skyblue;
+                font-weight: 600;
+            }
+            td {
+                border-bottom: 1px solid black;
+                text-align: right;
+            }
+            /* Various ways to manipulate display and alignment of images... */
+            img.medium {
+                width: 500px;
+            }
+            img.small {
+                width: 250px;
+            }
+            /* If you look at the tags in the text for the first image, I put in two different values for it's class attribute (medium and centered)! Yes, you can do that. */
+            img.centered {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            img.left {
+                float: left;
+                margin-right: 15px;
+                margin-top: 15px;
+            }
+            img.right {
+                float: right;
+                margin-left: 15px;
+                margin-top: 15px;
+            }
+            /* Given all the above, let's start applying it all to make some reactive text... How about a button? */
+            div.button {
+                border: 1px solid red;
+                border-radius: 10px;
+                width: 150px;
+                height: 75px;
+                padding: 19px;
+                text-align: center;
+                background-color: pink;
+                margin: auto;
+                -webkit-transition: width 1s, height 1s;
+                transition: width 1s, height 1s;
+            }
+            div.button:hover {
+                background-color: white;
+                border: 1px solid black;
+                width: 160px;
+                height: 80px
+            }
+            div.button:active {
+                background-color: darkred;
+            }
+            div.button a {
+                color: red;
+            }
+            div.button a:active {
+                color: pink;
+            }
+            /* Ok, cool. Now some hidden text that shows up when you mouseover... */
+            div.showhidden p.defaulthidden {
+                visibility: hidden;
+            }
+            div.showhidden:hover p.defaulthidden {
+                visibility: visible;
+            }
+            /* Messing around with photo grids... */
+            * {
+                box-sizing: border-box;
+            }
+            .img-container {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+            }
+            .img-container:hover {
+                opacity: 1.0;
+                filter: alpha(opacity=100);
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            </style>
+            
     </head>
     <h1>Heading 1: The main title for the page, usually.</h1>
 
