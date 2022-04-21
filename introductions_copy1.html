@@ -4,7 +4,7 @@
     <title> HTML Practice Group 4</title>
     <!--here is the externally linked stylesheet-->
     <link rel="icon" type="image/png" href="https://i.pinimg.com/564x/ef/63/10/ef6310e3372e689e72863c199d7699fa.jpg">
-     <!--here is the embedded stylesheet-->
+     <!--here is the embedded stylesheet with various style changes-->
     <style type="text/css">
         body {
                 background: rgb(10, 7, 14);
@@ -28,6 +28,14 @@
                 overflow: auto;
                 box-shadow: 5px 5px 5px;
             }
+            h1 {
+            color: black;
+            font-family: Georgia, serif;
+            font-weight: 900;
+            font-style: italic;
+            text-align: left;
+            font-weight: 900;
+        }
     </style>
 </head>
 
@@ -117,9 +125,9 @@
      <!--this is a line break after the text above-->
      <br>
  
-     <!--This is a table to display some more information-->
+     <!--This isnt working properly, maybe someone else can look at it-->
      <h3>More about the Artist</h3>
-     <table border="1" width="500">
+     <table style="width: 500; border: 1;">
         <!--the rows are equally split to three sections, hence the 33%-->
          <tr>
              <td width="33%">Artist <q>real</q> Name</td>
