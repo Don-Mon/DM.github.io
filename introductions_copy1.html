@@ -61,6 +61,19 @@
         div.showhidden:hover p.defaulthidden {
             visibility: visible;
         }
+        /*Max: a specific tag like <a> say, you want all <a> tags to be styled in a particular way */
+        a {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        /*Max: or specific unique elements that need to be styled a certain way through using the id="" attribute and #id in the stylesheet.*/
+        #first{
+            font-family: 'Courier New', Courier, monospace;;
+            color: black;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
     </style>
 </head>
 
@@ -111,7 +124,7 @@
 </div>
 
 <br>
-    <h3> About the Artist</h3>
+    <h3> <a>About the Artist</a></h3>
 
    <!--this is a list with bullet points-->
     <ul>
@@ -155,7 +168,7 @@
      <!--attach image-->
      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1513px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" width="500" alt="starry photo." title="Starry Photo">
  
-     <h3> About the Artist</h3>
+     <h3> <a>About the Artist</a></h3>
  
     <!--this is a list with bullet points-->
      <ul>
@@ -192,13 +205,13 @@
       <h3>MY FACE WHEN IT SNOWS IN APRIL</h3>
       <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F10play.com.au%2Fip%2Fs3%2F2020%2F10%2F01%2Fde9c81f02dfdf28ea0597cf2e4c7bcf2-996477.jpg%3Fio%3Dportrait&f=1&nofb=1" width="400" alt="Sad man." title="Sad man">
       
-      <h3>About the artist</h3>
+      <h3> <a>About the Artist</a></h3>
 
 
         <ul>
-            <li><strong>Name:</strong> Max Capcanari</li>
-            <li><strong>Age when this was painted:</strong> 20 years old</li>
-            <li><strong>Inspiration:</strong> "I was inspired to draw this painting, when I was working in the backyard on a sunny April day. And then it started snowing. I decided to draw this painting of a face full full of sadness and disappointment." </li>
+            <li><span id="first">Name:</span>Max Capcanari</li>
+            <li><span id="first">Age when this was painted:</span> 20 years old</li>
+            <li><span id="first">Inspiration:</span> "I was inspired to draw this painting, when I was working in the backyard on a sunny April day. And then it started snowing. I decided to draw this painting of a face full full of sadness and disappointment." </li>
         </ul>
 
         <div>If you want to learn more about this self-portrait, you can take a look <a href= "http://www.safran-arts.com/42day/art/art4mar/vangogh/self9.html">here!</a></div>
@@ -225,7 +238,7 @@
     <h3>THE WALK HOME</h3>
     <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Monet_-_Road_toward_the_Farm_Saint-Sim%C3%A9on%2C_Honfleur%2C_1867.jpg" width="500" alt="home" title="the way home">
     
-    <h3>About the artist</h3>
+    <h3> <a>About the Artist</a></h3>
 
 
       <ul>
