@@ -51,6 +51,23 @@
       font-size: 20px;
     }
 
+    /*this will be used for styling my buttons*/
+    .grow {
+      transition: all .2s ease-in-out;
+    }
+
+    .grow:hover {
+      transform: scale(1.1);
+    }
+
+    .shrink {
+      transition: all .2s ease-in-out;
+    }
+
+    .shrink:hover {
+      transform: scale(0.9);
+    }
+
     /*this is to put an effect when you hover over it*/
     .img-container {
       opacity: 0.5;
@@ -63,14 +80,6 @@
       filter: alpha(opacity=100);
     }
 
-    /* hidden text that shows up when you hover over the text with your mouse*/
-    div.showhidden p.defaulthidden {
-      visibility: hidden;
-    }
-
-    div.showhidden:hover p.defaulthidden {
-      visibility: visible;
-    }
 
     /*a specific tag like <a> say, you want all <a> tags to be styled in a particular way */
     a {
@@ -78,7 +87,6 @@
       text-transform: uppercase;
       text-decoration: underline;
     }
-
   </style>
 </head>
 <!--This is the Navigation bar up top. This was worked on by Drake-->
@@ -127,7 +135,7 @@
 
   <div class="shadow p-3 mb-5 bg-light rounded">
     <div class="text-center">
-      <img src="/individual_project/Media/Portfolio banner.png" class="rounded" alt="center" style="width:50%">
+      <img src="/individual_project/Media/Portfolio banner.png" class="rounded grow" alt="center" style="width:50%">
     </div>
   </div>
   <!---------------------------------------------Port Examples--------------------------------------------------------->
